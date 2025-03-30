@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    
+    <title>Real-Time Object Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        video {
+            border: 5px solid #00ff00;
+            border-radius: 10px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOLOv5 Real-Time Object Detection</h1>
+    <div>
+        <img src="/video_feed" width="800" height="600">
+    </div>
+    <footer>
+        <p>Powered by YOLOv5 & OpenCV</p>
+    </footer>
+</body>
+</html>
